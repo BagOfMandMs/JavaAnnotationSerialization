@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation project(':lib')
+    annotationProcessor project(':lib')
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = "com.example.Hello"
+}
